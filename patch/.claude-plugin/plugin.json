@@ -1,7 +1,7 @@
 {
   "name": "patch",
   "displayName": "Patch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Saves the decisions you make in Claude Code to your Patch project, so you never have to reconstruct the why later.",
   "author": {
     "name": "Patch",
@@ -10,7 +10,13 @@
   "homepage": "https://getpatchapp.com",
   "repository": "https://github.com/yannis-kourtis/patch-claude-code",
   "license": "MIT",
-  "keywords": ["decisions", "case-study", "portfolio", "design", "memory"],
+  "keywords": [
+    "decisions",
+    "case-study",
+    "portfolio",
+    "design",
+    "memory"
+  ],
   "userConfig": {
     "patch_token": {
       "type": "string",

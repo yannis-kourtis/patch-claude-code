@@ -2,7 +2,7 @@
   "mcpServers": {
     "patch": {
       "type": "http",
-      "url": "${user_config.api_base_url}/functions/v1/mcp",
+      "url": "https://vkjdwdadejhyngswzprc.supabase.co/functions/v1/mcp",
       "headers": {
         "Authorization": "Bearer ${user_config.patch_token}"
       }
