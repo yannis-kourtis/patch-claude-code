@@ -1,0 +1,49 @@
+{
+  "name": "patch",
+  "displayName": "Patch",
+  "version": "0.1.0",
+  "description": "Saves the decisions you make in Claude Code to your Patch project, so you never have to reconstruct the why later.",
+  "author": {
+    "name": "Patch",
+    "url": "https://getpatchapp.com"
+  },
+  "homepage": "https://getpatchapp.com",
+  "repository": "https://github.com/yannis-kourtis/patch-claude-code",
+  "license": "MIT",
+  "keywords": ["decisions", "case-study", "portfolio", "design", "memory"],
+  "userConfig": {
+    "patch_token": {
+      "type": "string",
+      "title": "Patch access token",
+      "description": "A personal access token (starts with patch_pat_). Create one in Patch: sidebar > Access tokens (app.getpatchapp.com/access-tokens).",
+      "sensitive": true,
+      "required": true
+    },
+    "project_id": {
+      "type": "string",
+      "title": "Patch project id",
+      "description": "The project new decisions go to. Ask Claude to run list_projects from the Patch MCP server if you don't know it.",
+      "required": true
+    },
+    "auto_capture": {
+      "type": "boolean",
+      "title": "Save decisions when a session ends",
+      "description": "When on, Patch reads each finished session and saves the 0 to 3 real decisions in it.",
+      "default": true
+    },
+    "min_user_turns": {
+      "type": "number",
+      "title": "Shortest session to read",
+      "description": "Sessions with fewer of your messages than this are skipped.",
+      "default": 4,
+      "min": 1,
+      "max": 50
+    },
+    "api_base_url": {
+      "type": "string",
+      "title": "Patch API base URL",
+      "description": "Leave as is unless you run your own Patch backend.",
+      "default": "https://vkjdwdadejhyngswzprc.supabase.co"
+    }
+  }
+}

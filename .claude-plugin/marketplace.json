@@ -1,0 +1,15 @@
+{
+  "name": "patch",
+  "description": "Patch plugins for Claude Code.",
+  "owner": {
+    "name": "Patch",
+    "url": "https://getpatchapp.com"
+  },
+  "plugins": [
+    {
+      "name": "patch",
+      "source": "./patch",
+      "description": "Saves the decisions you make in Claude Code to your Patch project."
+    }
+  ]
+}

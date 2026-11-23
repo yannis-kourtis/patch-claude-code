@@ -1,0 +1,16 @@
+{
+  "description": "Patch auto-capture: when a session ends, save its real decisions to your Patch project in the background.",
+  "hooks": {
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/session-end.mjs\"",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
