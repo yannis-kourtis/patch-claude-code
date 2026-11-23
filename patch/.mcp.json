@@ -3,9 +3,7 @@
     "patch": {
       "type": "http",
       "url": "https://vkjdwdadejhyngswzprc.supabase.co/functions/v1/mcp",
-      "headers": {
-        "Authorization": "Bearer ${user_config.patch_token}"
-      }
+      "headersHelper": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/mcp-headers.mjs\" \"${CLAUDE_PLUGIN_DATA}\""
     }
   }
 }

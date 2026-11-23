@@ -1,6 +1,17 @@
 {
-  "description": "Patch auto-capture: when a session ends, save its real decisions to your Patch project in the background.",
+  "description": "Patch: keep the MCP token in sync at session start, and save the session's decisions when it ends.",
   "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/save-token.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
     "SessionEnd": [
       {
         "hooks": [

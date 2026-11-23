@@ -26,6 +26,6 @@ Say "save this to Patch" in any session, or run `/patch:capture`.
 
 ## Privacy
 
-Sessions are read by Claude with your own Claude Code login, the same way your sessions already run. Only the extracted decisions are sent to Patch, never the session itself. Turn auto-capture off any time in `/config`.
+Sessions are read by Claude with your own Claude Code login, the same way your sessions already run. Only the extracted decisions are sent to Patch, never the session itself. Your token is kept in Claude Code's secure settings and copied to a private file (readable only by you) in the plugin's data folder, so the Patch MCP server can use it. Turn auto-capture off any time in `/config`.
 
 More detail, dry runs and tests: [patch/README.md](patch/README.md).

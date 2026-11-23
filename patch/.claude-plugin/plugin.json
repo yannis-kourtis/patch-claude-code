@@ -1,7 +1,7 @@
 {
   "name": "patch",
   "displayName": "Patch",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Saves the decisions you make in Claude Code to your Patch project, so you never have to reconstruct the why later.",
   "author": {
     "name": "Patch",
